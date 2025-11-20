@@ -1,0 +1,386 @@
+
+# 2025-11-20 19:41:50.738927
++Code the following app
++```
++Technical Specification (TS) – Coin Flip Randomizer with Multiple Modes
++1. Project Overview
++
++The Coin Flip Randomizer is a simple application designed to simulate coin tosses with different modes and variations. The program provides a clean interface, multiple randomization options, statistics tracking, and customizable coin designs.
++The tool is meant for games, decision-making, testing randomness, or entertainment.
++
++2. Functional Requirements
++2.1 Basic Coin Flip
++
++The program must provide:
++
++A standard Heads or Tails random result
++
++Visual animation of a coin flip (optional)
++
++Instant output if animation is disabled
++
++Output format examples:
++
++“Heads” / “Tails”
++
++Icon-based display
++
++Custom text if user enables custom labels
++
++2.2 Multiple Flip Modes
++
++The program must include several flip variations:
++
++Mode 1: Single Flip
++
++One flip per click
++
++Displays result immediately
++
++Mode 2: Multi-Flip
++
++User selects number of flips (e.g., 10, 50, 100, 1000)
++
++Program shows:
++
++count of Heads
++
++count of Tails
++
++percentage distribution
++
++optional chart (bar or pie chart)
++
++Mode 3: Streak Mode
++
++Tracks longest streaks during flips
++
++Shows:
++
++Longest Heads streak
++
++Longest Tails streak
++
++Current streak
++
++Mode 4: Custom Coin
++
++User can rename “Heads” and “Tails” (e.g., “Yes/No”, “Red/Blue”)
++
++Program behaves like a normal flip but with custom labels
++
++Mode 5: Weighted Coin
++
++User can set probability of Heads or Tails (e.g., 60/40, 75/25)
++
++Program must calculate result based on the chosen weight
++
++2.3 Randomness Engine
++
++Must use a high-quality pseudorandom number generator
++
++Should avoid repeating patterns in short sequences
++
++Optional: “True random mode” using online random API (if available)
++
++2.4 Statistics & History
++
++Keep flip history for the current session
++
++Show:
++
++total flips
++
++Heads/Tails ratio
++
++recent results (e.g., last 20 flips)
++
++Optional: export history to a text or CSV file
++
++3. User Interface Requirements
++
++Simple, clean UI
++
++Large button for coin flip
++
++Clear display of results
++
++Mode selector dropdown/menu
++
++Statistics panel for multi-flip mode
++
++Light/Dark mode
++
++Optional:
++
++coin animation
++
++customizable coin color or image
++
++4. Non-Functional Requirements
++4.1 Platform
++
++The program can be:
++
++Desktop app (Windows/Linux/Mac)
++
++Web app
++
++Mobile app (optional)
++
++4.2 Performance
++
++Single flip results must be instantaneous
++
++Multi-flip (1000+ flips) must complete under 1 second
++
++UI should remain responsive during calculations
++
++4.3 Data Handling
++
++No personal data required
++
++History stored only in current session (unless user saves)
++
++4.4 Safety
++
++Must show a disclaimer:
++“This randomizer is for entertainment and simulation purposes only.”
++
++5. Technical Stack (Recommended)
++Option A – Desktop (Python)
++
++Python
++
++Tkinter or PyQt
++
++Random module for RNG
++
++Matplotlib for charts
++
++Option B – Web App
++
++HTML/CSS/JavaScript
++
++Canvas or SVG for coin animation
++
++Chart.js for statistics
++
++LocalStorage for session history
++
++Option C – Mobile
++
++Flutter or React Native
++
++6. Future Expansion
++
++Dice roll modes
++
++Spinner mode (like a wheel)
++
++“Tournament flip” mode
++
++Multiple coins flipped simultaneously
++
++Custom coin images upload
++
++Sound effects
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 19:41:50.739880
++Code the following app
++```
++Technical Specification (TS) – Coin Flip Randomizer with Multiple Modes
++1. Project Overview
++
++The Coin Flip Randomizer is a simple application designed to simulate coin tosses with different modes and variations. The program provides a clean interface, multiple randomization options, statistics tracking, and customizable coin designs.
++The tool is meant for games, decision-making, testing randomness, or entertainment.
++
++2. Functional Requirements
++2.1 Basic Coin Flip
++
++The program must provide:
++
++A standard Heads or Tails random result
++
++Visual animation of a coin flip (optional)
++
++Instant output if animation is disabled
++
++Output format examples:
++
++“Heads” / “Tails”
++
++Icon-based display
++
++Custom text if user enables custom labels
++
++2.2 Multiple Flip Modes
++
++The program must include several flip variations:
++
++Mode 1: Single Flip
++
++One flip per click
++
++Displays result immediately
++
++Mode 2: Multi-Flip
++
++User selects number of flips (e.g., 10, 50, 100, 1000)
++
++Program shows:
++
++count of Heads
++
++count of Tails
++
++percentage distribution
++
++optional chart (bar or pie chart)
++
++Mode 3: Streak Mode
++
++Tracks longest streaks during flips
++
++Shows:
++
++Longest Heads streak
++
++Longest Tails streak
++
++Current streak
++
++Mode 4: Custom Coin
++
++User can rename “Heads” and “Tails” (e.g., “Yes/No”, “Red/Blue”)
++
++Program behaves like a normal flip but with custom labels
++
++Mode 5: Weighted Coin
++
++User can set probability of Heads or Tails (e.g., 60/40, 75/25)
++
++Program must calculate result based on the chosen weight
++
++2.3 Randomness Engine
++
++Must use a high-quality pseudorandom number generator
++
++Should avoid repeating patterns in short sequences
++
++Optional: “True random mode” using online random API (if available)
++
++2.4 Statistics & History
++
++Keep flip history for the current session
++
++Show:
++
++total flips
++
++Heads/Tails ratio
++
++recent results (e.g., last 20 flips)
++
++Optional: export history to a text or CSV file
++
++3. User Interface Requirements
++
++Simple, clean UI
++
++Large button for coin flip
++
++Clear display of results
++
++Mode selector dropdown/menu
++
++Statistics panel for multi-flip mode
++
++Light/Dark mode
++
++Optional:
++
++coin animation
++
++customizable coin color or image
++
++4. Non-Functional Requirements
++4.1 Platform
++
++The program can be:
++
++Desktop app (Windows/Linux/Mac)
++
++Web app
++
++Mobile app (optional)
++
++4.2 Performance
++
++Single flip results must be instantaneous
++
++Multi-flip (1000+ flips) must complete under 1 second
++
++UI should remain responsive during calculations
++
++4.3 Data Handling
++
++No personal data required
++
++History stored only in current session (unless user saves)
++
++4.4 Safety
++
++Must show a disclaimer:
++“This randomizer is for entertainment and simulation purposes only.”
++
++5. Technical Stack (Recommended)
++Option A – Desktop (Python)
++
++Python
++
++Tkinter or PyQt
++
++Random module for RNG
++
++Matplotlib for charts
++
++Option B – Web App
++
++HTML/CSS/JavaScript
++
++Canvas or SVG for coin animation
++
++Chart.js for statistics
++
++LocalStorage for session history
++
++Option C – Mobile
++
++Flutter or React Native
++
++6. Future Expansion
++
++Dice roll modes
++
++Spinner mode (like a wheel)
++
++“Tournament flip” mode
++
++Multiple coins flipped simultaneously
++
++Custom coin images upload
++
++Sound effects
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 19:42:35.266640
++apply changes
+
+# 2025-11-20 19:42:35.267013
++apply changes
